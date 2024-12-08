@@ -1,0 +1,32 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["ultracite"],
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 120
+  },
+  "linter": {
+    "rules": {
+      "style": {
+        "noNamespaceImport": "off",
+        "useNamingConvention": "info"
+      },
+      "suspicious": {
+        "noConsole": "off",
+        "noConsoleLog": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "lineWidth": 120,
+      "quoteStyle": "double",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "asNeeded"
+    }
+  }
+}

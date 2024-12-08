@@ -1,0 +1,35 @@
+{
+  "name": "confiz",
+  "version": "0.1.0",
+  "description": "A CLI tool to manage your configuration files.",
+  "license": "MIT",
+  "author": "Christophe Ribeiro <christophe@ribeiro.io>",
+  "homepage": "https://github.com/christoribeiro/confiz#readme",
+  "type": "module",
+  "main": "dist/cli.js",
+  "module": "src/cli.ts",
+  "types": "dist/cli.d.ts",
+  "files": ["dist/*.js", "dist/*.d.ts"],
+  "scripts": {
+    "build": "bun build --target=node ./src/cli.ts --outfile=dist/cli.js && bun run build:declaration",
+    "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
+    "prepublish": "bun run build",
+    "lint": "biome check --write ."
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/yargs": "^17.0.32",
+    "ultracite": "^4.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christoribeiro/confiz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christoribeiro/confiz/issues"
+  },
+  "keywords": ["cli", "config", "Hocon", "Node.js", "TypeScript", "JavaScript"]
+}
