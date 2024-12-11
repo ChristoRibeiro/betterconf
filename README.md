@@ -53,7 +53,7 @@ Add betterconf to your package's scripts (Next.js example here):
 And use it anywhere from your code source:
 
 ```ts
-import { config } from "config"
+import { config } from "./config"
 
 console.log(config.env)               // "development"
 console.log(config.database.provider) // "sqlite"
