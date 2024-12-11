@@ -1,9 +1,6 @@
 # Betterconf
 
-Use .conf configuration files in your JavaScript/TypeScript project.
-
-> **Warning**
-> This project is currently a work in progress and not usable at all yet.
+Use .conf configuration files and generate a TypeScript file.
 
 ## Installation
 
