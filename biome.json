@@ -11,9 +11,13 @@
   },
   "linter": {
     "rules": {
+      "correctness": {
+        "noNodejsModules": "off"
+      },
       "style": {
         "noNamespaceImport": "off",
-        "useNamingConvention": "info"
+        "useNamingConvention": "info",
+        "useNodejsImportProtocol": "off"
       },
       "suspicious": {
         "noConsole": "off",
