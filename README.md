@@ -46,7 +46,7 @@ Add betterconf to your package's scripts (Next.js example here):
 "scripts": {
   "dev": "betterconf -c development.conf -o src/config.ts -- next dev",
   "build": "betterconf -c production.conf -o src/config.ts -- next build",
-  "start": "betterconf -c production.conf -o src/config.ts -- next start"
+  ...
 }
 ```
 
