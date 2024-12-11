@@ -1,10 +1,10 @@
 {
-  "name": "dotconf",
+  "name": "betterconf",
   "version": "0.1.0",
   "description": "CLI for *.conf files",
   "license": "MIT",
   "author": "Christophe Ribeiro <christophe@ribeiro.io>",
-  "homepage": "https://github.com/christoribeiro/dotconf#readme",
+  "homepage": "https://github.com/christoribeiro/betterconf#readme",
   "type": "module",
   "main": "dist/cli.js",
   "module": "src/cli.ts",
@@ -27,10 +27,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/christoribeiro/dotconf.git"
+    "url": "https://github.com/christoribeiro/betterconf.git"
   },
   "bugs": {
-    "url": "https://github.com/christoribeiro/dotconf/issues"
+    "url": "https://github.com/christoribeiro/betterconf/issues"
   },
   "keywords": ["cli", "config", "Hocon", "Node.js", "TypeScript", "JavaScript"]
 }
