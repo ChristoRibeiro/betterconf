@@ -12,7 +12,8 @@
   "linter": {
     "rules": {
       "correctness": {
-        "noNodejsModules": "off"
+        "noNodejsModules": "off",
+        "noUndeclaredVariables": "off"
       },
       "style": {
         "noNamespaceImport": "off",

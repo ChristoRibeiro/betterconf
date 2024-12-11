@@ -1,7 +1,7 @@
 {
   "name": "betterconf",
-  "version": "0.1.0",
-  "description": "CLI for *.conf files",
+  "version": "1.0.0",
+  "description": "[*].conf to [*].ts",
   "license": "MIT",
   "author": "Christophe Ribeiro <christophe@ribeiro.io>",
   "homepage": "https://github.com/christoribeiro/betterconf#readme",
@@ -18,8 +18,8 @@
     "build:types": "tsc --emitDeclarationOnly --project tsconfig.types.json",
     "prebuild": "bun run test",
     "postbuild": "rm -f tsconfig.types.tsbuildinfo",
-    "test": "vitest run",
-    "test:watch": "vitest",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
     "lint": "biome check --write .",
     "publish": "npm publish --access public",
     "prepublish": "bun run build"
