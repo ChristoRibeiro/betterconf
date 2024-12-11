@@ -27,15 +27,26 @@ bun install betterconf
 
 ## Getting started
 
-betterconf support .conf file with the Hocon specs. Here a short sample:
+betterconf support .conf file with the Hocon specs. Here a short sample with dev and prod conf:
 
 ```conf
-# development.conf
+# config.dev.conf
 {
-  env = ${NODE_ENV}
+  env = ${NODE_ENV} # development
   database {
     provider = "sqlite"
     url      = "file:./dev.db"
+  }
+}
+```
+
+```conf
+# config.prod.conf
+{
+  env = ${NODE_ENV} # production
+  database {
+    provider = "postgres"
+    url      = "postgresql://postgres:postgres@localhost:5432/postgres"
   }
 }
 ```
@@ -44,8 +55,8 @@ Add betterconf to your package's scripts (Next.js example here):
 
 ```json
 "scripts": {
-  "dev": "betterconf -c development.conf -o src/config.ts -- next dev",
-  "build": "betterconf -c production.conf -o src/config.ts -- next build",
+  "dev": "betterconf run -r='config.dev.conf' -w='src/config.ts' -- next dev",
+  "build": "betterconf run -r='config.prod.conf' -w='src/config.ts' -- next build",
   ...
 }
 ```
