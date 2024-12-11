@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/christoribeiro/betterconf.git"
+    "url": "git@github.com:christoribeiro/betterconf.git"
   },
   "bugs": {
     "url": "https://github.com/christoribeiro/betterconf/issues"
